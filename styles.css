@@ -14,6 +14,10 @@
   --input-color: #FAFAFC;
 }
 
+body *{
+  transition: all .25s;
+}
+
 body{
   display: grid;
   place-content: center;
@@ -84,6 +88,7 @@ header p{
 
 form{
   border-radius: 2rem 2rem 0 0;
+  background-color: var(--bg-color);
 }
 
 form > div:first-child {
@@ -185,4 +190,24 @@ input[type="submit"]{
   color: var(--input-color);
 
   border-radius: .8rem;
+}
+
+
+/*Queries*/
+
+@media(min-width: 768px){
+  form{
+    min-width: 75rem;
+    margin-bottom: 6rem;
+    border-radius: 2rem;
+  }
+
+  form fieldset{
+    padding-inline: 6.4rem;
+  }
+
+  input[type="submit"]{
+    margin-bottom: 6rem;
+  }
+
 }
