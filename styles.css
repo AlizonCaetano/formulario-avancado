@@ -28,7 +28,7 @@ body{
 
   font-family: 'Staatliches', cursive;
 
-  background-color: var(--bg-color);
+  background-color: var(--secondary-color);
 }
 
 body:before{
@@ -133,6 +133,7 @@ input#checkbox {
 
 
 .input-wrapper select{
+  font-family: 'Poppins', sa;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -210,4 +211,19 @@ input[type="submit"]{
     margin-bottom: 6rem;
   }
 
+  .\32 fr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+  .\33 fr {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3.2rem;
+  }
+
+  input[type="submit"]{
+    font-size: 2.4rem;
+  }
 }
